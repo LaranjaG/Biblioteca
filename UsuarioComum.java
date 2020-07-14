@@ -9,6 +9,12 @@ package com.biblioteca.gabrielneto;
  *
  * @author 0479
  */
-public class UsuarioComum {
+public class UsuarioComum extends Usuarios{
+
+    public UsuarioComum(String nome) {
+        super(nome);
+    }
+    
+    
     
 }

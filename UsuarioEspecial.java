@@ -5,10 +5,19 @@
  */
 package com.biblioteca.gabrielneto;
 
+
 /**
  *
  * @author 0479
  */
-public class UsuarioEspecial {
+public class UsuarioEspecial extends Usuarios {
+
+    public UsuarioEspecial(String nome) {
+        super(nome);
+    }
+
+    
+    
+    
     
 }

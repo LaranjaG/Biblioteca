@@ -9,6 +9,8 @@ São informações relevantes do usuário: Nome, telefone, email e cpf.
 */
 package com.biblioteca.gabrielneto;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author 0479
@@ -18,7 +20,19 @@ public abstract class Usuarios {
     private String nome;
     private String telefone;
     private String email;
-    private int cpf;
+    private int cpf; 
+    private ArrayList<Emprestimo> emprestimo ;
+
+    public ArrayList<Emprestimo> getEmprestimo() {
+        return emprestimo;
+    }
+
+    public void setEmprestimo(ArrayList<Emprestimo> emprestimo) {
+        this.emprestimo = emprestimo;
+    }
+    
+    
+    
 
     public String getNome() {
         return nome;
@@ -57,6 +71,7 @@ public abstract class Usuarios {
         this.telefone = telefone;
         this.email = email;
         this.cpf = cpf;
+        this.emprestimo = new ArrayList <>();
     }
 
     public Usuarios(String nome) {
@@ -65,6 +80,9 @@ public abstract class Usuarios {
     
     
     
+        public void addEmprestimo( Emprestimo emprestimo){
+        this.emprestimo.add(emprestimo);
+    }
     
     
     
